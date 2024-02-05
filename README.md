@@ -14,7 +14,7 @@ Have your preferred IDE or code editor ready, along with a thirst for knowledge 
 In your terminal, navigate to the project's root and execute `dotnet restore` to bring the necessary NuGet packages to life.
 
 ## Forge the Build: 
-Witness the project take shape with the `dotnet build command`.
+Witness the project take shape with the `dotnet build` command.
 
 ## Run with Excitement: 
 Unleash the application's potential using `dotnet run`.
