@@ -107,7 +107,7 @@ namespace Driver.DAL.Repositories
             }
             else
             {
-                var command = new SQLiteCommand("UPDATE driver SET FirstName = '@firstName', LastName = '@lastName', Email = '@email', PhoneNumber = '@phoneNumber' WHERE ID = '@id';", _driverDataContext.connection);
+                var command = new SQLiteCommand("UPDATE driver SET FirstName = @firstName, LastName = @lastName, Email = @email, PhoneNumber = @phoneNumber WHERE ID = @id;", _driverDataContext.connection);
                 command.Parameters.AddWithValue("@id", driver.Id.ToString());
                 command.Parameters.AddWithValue("@firstName", driver.FirstName);
                 command.Parameters.AddWithValue("@lastName", driver.LastName);
